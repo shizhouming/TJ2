@@ -52,7 +52,7 @@ public class MyPandaCircle extends View {
     @Override
     protected void onDraw(Canvas canvas) {
 
-
+        //设置画笔的样式
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setColor(Color.BLACK);
 
