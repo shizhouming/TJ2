@@ -56,7 +56,7 @@ public class RecyclerViewActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view);
         initView();
-        initData4();
+        initData();
 
 
         /*String str = "{ \"Students\": { \"Student\": [ { \"name\": \"张三\", \"content\": " +
@@ -79,7 +79,7 @@ public class RecyclerViewActivity extends Activity {
 
 
     }
-
+    //加载数据
     private void initData() {
         File sdcache = getExternalCacheDir();
         int cacheSize = 10 * 1024 * 1024;
