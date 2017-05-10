@@ -10,11 +10,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.example.lenovo.tj.MainActivity;
-
-import static android.R.attr.width;
-import static android.R.attr.x;
-import static android.R.attr.y;
+import com.example.lenovo.tj.MyCircleActivity;
 
 /**
  * date: 2017/5/8
@@ -114,7 +110,7 @@ public class MyCircle extends View {
             } else {
                 area = 1;
             }
-            ((MainActivity) mContext).showClickArea(area);
+            ((MyCircleActivity) mContext).showClickArea(area);
         }
         return super.onTouchEvent(event);
     }
@@ -138,7 +134,7 @@ public class MyCircle extends View {
             } else {
                 area = 3;
             }
-            ((MainActivity) mContext).showClickArea(area);
+            ((MyCircleActivity) mContext).showClickArea(area);
         }
         return super.onTouchEvent(event);
     }*/

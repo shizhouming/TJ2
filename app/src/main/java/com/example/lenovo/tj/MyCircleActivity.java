@@ -1,5 +1,6 @@
 package com.example.lenovo.tj;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.FrameLayout;
@@ -7,7 +8,7 @@ import android.widget.Toast;
 
 import com.example.lenovo.tj.view.MyCircle;
 
-public class MainActivity extends AppCompatActivity {
+public class MyCircleActivity extends AppCompatActivity {
 
     private MyCircle myCircle;
     private FrameLayout activity_main;
@@ -23,18 +24,19 @@ public class MainActivity extends AppCompatActivity {
         myCircle = (MyCircle) findViewById(R.id.myCircle);
         activity_main = (FrameLayout) findViewById(R.id.activity_main);
 
-
     }
     public void showClickArea(int area) {
         switch (area){
             case 1:
-                Toast.makeText(MainActivity.this,"您点击到了第1块区域！",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MyCircleActivity.this,"您点击到了第1块区域！",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MyCircleActivity.this, MyPandaCircleActivity.class);
+                startActivity(intent);
                 break;
             case 2:
-                Toast.makeText(MainActivity.this,"您点击到了第2块区域！",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MyCircleActivity.this,"您点击到了第2块区域！",Toast.LENGTH_SHORT).show();
                 break;
             case 3:
-                Toast.makeText(MainActivity.this,"您点击到了第3块区域！",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MyCircleActivity.this,"您点击到了第3块区域！",Toast.LENGTH_SHORT).show();
                 break;
         }
     }
