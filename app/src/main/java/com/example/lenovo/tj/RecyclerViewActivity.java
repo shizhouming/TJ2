@@ -56,8 +56,7 @@ public class RecyclerViewActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view);
         initView();
-        initData();
-
+        initData3();
 
         /*String str = "{ \"Students\": { \"Student\": [ { \"name\": \"张三\", \"content\": " +
                 "\"学生简介学生简介学生简介学生简介学生简介\", \"img\": \"http://img.juhe" +
@@ -133,7 +132,7 @@ public class RecyclerViewActivity extends Activity {
             public void run() {
                 OkHttpClient.Builder builder = new OkHttpClient.Builder();
                 OkHttpClient build = builder.build();
-                Request get = new Request.Builder().url(Uri.PATH).method("GET", null).build();
+                Request get = new Request.Builder().url(Uri.PATH6).method("GET", null).build();
                 Call call = build.newCall(get);
                 try {
                     Response execute = call.execute();
@@ -152,14 +151,14 @@ public class RecyclerViewActivity extends Activity {
 
     private void initData3(){
         RequestBody formBody = new FormBody.Builder()
-                .add("page", "1")
+              /*  .add("page", "1")
                 .add("code", "news")
                 .add("pageSize", "20")
                 .add("parentid", "0")
-                .add("type", "1")
+                .add("type", "1")*/
                 .build();
         OkHttpClient build1 = new OkHttpClient.Builder().build();
-        Request build = new Request.Builder().method("POST",formBody).url(Uri.PATH3).build();
+        Request build = new Request.Builder().method("POST",formBody).url(Uri.PATH6).build();
         Call call = build1.newCall(build);
         call.enqueue(new Callback() {
             @Override

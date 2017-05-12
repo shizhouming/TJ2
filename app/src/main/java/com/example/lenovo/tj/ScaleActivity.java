@@ -8,6 +8,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.squareup.picasso.Picasso;
+
 public class ScaleActivity extends Activity implements View.OnTouchListener {
 
     private ImageView scale_img;
@@ -98,6 +100,7 @@ public class ScaleActivity extends Activity implements View.OnTouchListener {
 
     private void initView() {
         scale_img = (ImageView) findViewById(R.id.scale_img);
+        Picasso.with(ScaleActivity.this).load("https://www.baidu.com/img/bd_logo1.png").into(scale_img);
         scale_img.setOnTouchListener(this);
     }
 }

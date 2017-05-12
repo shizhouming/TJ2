@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TJ.iml" filepath="$PROJECT_DIR$/TJ.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/checkboxrecycler/checkboxrecycler.iml" filepath="$PROJECT_DIR$/checkboxrecycler/checkboxrecycler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eventbus_text/eventbus_text.iml" filepath="$PROJECT_DIR$/eventbus_text/eventbus_text.iml" />
     </modules>
   </component>
 </project>

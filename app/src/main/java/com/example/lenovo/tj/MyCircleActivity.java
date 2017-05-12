@@ -34,9 +34,13 @@ public class MyCircleActivity extends AppCompatActivity {
                 break;
             case 2:
                 Toast.makeText(MyCircleActivity.this,"您点击到了第2块区域！",Toast.LENGTH_SHORT).show();
+                Intent intent2 = new Intent(MyCircleActivity.this, ScaleActivity.class);
+                startActivity(intent2);
                 break;
             case 3:
                 Toast.makeText(MyCircleActivity.this,"您点击到了第3块区域！",Toast.LENGTH_SHORT).show();
+                Intent intent3 = new Intent(MyCircleActivity.this, Test_EventBus_Activity.class);
+                startActivity(intent3);
                 break;
         }
     }
